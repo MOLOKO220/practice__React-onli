@@ -1,0 +1,34 @@
+.GETrequest {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > h1 {
+    margin-bottom: 50px;
+  }
+  .GETrequest__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    @media (max-width: 903px) {
+      justify-content: flex-start;
+      max-width: 728px;
+      width: 100vw;
+    }
+    @media (max-width: 727px) {
+      justify-content: space-around;
+    }
+  }
+  > button {
+    margin-top: 50px;
+    width: 120px;
+    padding: 4px 18px;
+
+    &:disabled {
+      background: #b4b4b4;
+      color: rgba(255, 255, 255, 0.87);
+    }
+  }
+}

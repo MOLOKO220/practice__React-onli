@@ -1,0 +1,36 @@
+.Header {
+  height: 60px;
+  width: 100vw;
+  background: #ffffff;
+  > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1170px) {
+      padding: 0 60px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 32px;
+    }
+    @media (max-width: 430px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 360px) {
+      padding: 0 16px;
+    }
+    > a {
+      img {
+        width: 104px;
+        height: 26px;
+      }
+    }
+    .Header__btns-wrapp {
+      width: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

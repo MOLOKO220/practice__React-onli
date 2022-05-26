@@ -1,0 +1,24 @@
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  width: 100vw;
+  background: url("./img/Back.png");
+  background-position: center;
+  h1,
+  p {
+    color: white;
+    width: 380px;
+    @media (max-width: 420px) {
+      width: 350px;
+    }
+    @media (max-width: 380px) {
+      width: 328px;
+    }
+  }
+  > p {
+    margin: 21px 0 32px 0;
+  }
+}

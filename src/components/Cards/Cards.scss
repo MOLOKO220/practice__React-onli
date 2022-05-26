@@ -1,0 +1,60 @@
+.User {
+  height: 254px;
+  width: 370px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 29px 5px 0px 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  @media (max-width: 1165px) {
+    width: 320px;
+  }
+  @media (max-width: 1025px) {
+    width: 284px;
+  }
+  @media (max-width: 903px) {
+    width: 344px;
+    margin: 16px 5px 0px 5px;
+  }
+  @media (max-width: 395px) {
+    width: 328px;
+    margin: 20px 5px 0px 5px;
+  }
+  > img {
+    border-radius: 50%;
+  }
+  p {
+    max-width: 300px;
+    max-height: 26px;
+    overflow: hidden;
+    @media (max-width: 1025px) {
+      max-width: 240px;
+    }
+    @media (max-width: 903px) {
+      max-width: 300px;
+    }
+  }
+  .shadow-title {
+    height: auto;
+    width: auto;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 3px 16px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 5;
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
